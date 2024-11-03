@@ -1,0 +1,24 @@
+# dependencies
+node_modules
+# production
+logs/*.log
+dist
+files
+# misc
+.env
+.env.*
+config.json
+config.*.json
+config.js
+!config.example.json
+public
+
+npm-debug.log*
+yarn.lock
+yarn-error.log*
+package-lock.json
+compilers/*.js
+tmp/*
+!tmp/readme.md
+
+path/*
