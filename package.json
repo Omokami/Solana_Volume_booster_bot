@@ -16,6 +16,7 @@
   "author": "felixjan",
   "license": "ISC",
   "dependencies": {
+    "@solana/web3.js": "^1.95.4",
     "@types/node": "^22.8.7",
     "@types/node-telegram-bot-api": "^0.64.7",
     "axios": "^1.7.7",
