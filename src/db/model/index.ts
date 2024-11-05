@@ -18,8 +18,16 @@ const UserWalletSchema = new Schema({
   lastUpdated: { type: Date, default: Date.now },
 });
 
+const DepositSchema = new Schema({
+  userId: { type: Number, required: true, unique: true },
+  tokenAddress: {
+    type: Array,
+    required: true,
+  },
+});
 export const Tokens = mongoose.model("tokens", TokenSettingSchema);
 export const Wallet = mongoose.model("wallets", UserWalletSchema);
+export const Deposit = mongoose.model("deposits", DepositSchema);
 
 export const getMaxFromCollection = async (
   collection: mongoose.Model<any>,
